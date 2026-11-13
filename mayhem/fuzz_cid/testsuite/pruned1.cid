@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SCL xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd"> 
+  <Header id="" version="V1.00" revision="" toolID="CATL_ScdSft_V1.0" nameStructure="IEDName"> 
+    <History> 
+      <Hitem version="1.00" revision="1.0" what="创建" when="2018-05-11 10:52:00" who="" />  
+       
+    </History> 
+  </Header>
+  <Substation name="Substation" desc="Substation" />  
+  <Communication> 
+    <SubNetwork name="MMS-A" type="8-MMS"> 
+      <ConnectedAP iedName="CATL_BMS3" apName="S1"> 
+			<Address>
+               <P type="OSI-AP-Title">1,1,9999,1</P>
+               </Address>
+      </ConnectedAP>
+    </SubNetwork>
+  </Communication>  
+  <IED name="CATL_BMS3" type="BMS" manufacturer="CATL" desc="电池管理系统设备" configVersion="V1.00"> 
+    <Services> 
+      <DynAssociation />  
+      <SettingGroups> 
+        <SGEdit />  
+        <ConfSG /> 
+      </SettingGroups>  
+      <GetDirectory />  
+      <GetDataObjectDefinition />  
+      <DataObjectDirectory />  
+      <GetDataSetValue />  
+      <SetDataSetValue />  
+      <DataSetDirectory />  
+      <ConfDataSet max="160" maxAttributes="512" />  
+      <ReadWrite />  
+      <ConfReportControl max="160" />  
+      <GetCBValues />  
+      <ConfLogControl max="4" />  
+      <ReportSettings cbName="Conf" datSet="Conf" rptID="Dyn" optFields="Dyn" bufTime="Dyn" trgOps="Dyn" intgPd="Dyn" />  
+      <LogSettings cbName="Fix" datSet="Fix" logEna="Dyn" trgOps="Fix" intgPd="Conf" />  
+      <GOOSE max="64" />  
+      <FileHandling />  
+      <ConfLNs fixPrefix="true" fixLnInst="true" /> 
+    </Services>  
+    <AccessPoint name="S1"> 
+      <Server> 
+        <Authentication none="true" />  
+        <LDevice inst="LD0" desc="电池系统本体信息"> 
+          <LN0 inst="" lnClass="LLN0" lnType="BATTERY_V1.00_LLN0" desc="管理逻辑节点"> 
+            <DataSet name="dsDin" desc="电池系统本体遥信信息"> 
+              <FCDA ldInst="LD0" prefix="batSys" lnInst="1" lnClass="GGIO" doName="YxSys01" fc="ST" />  
+              </DataSet>  
+            <ReportControl name="brcbRelayEna" desc="" rptID="CATL_BMS3LD0/LLN0$BR$brcbRelayEna01" datSet="dsRelayEna" confRev="1" intgPd="5000" buffered="true" bufTime="4000"> 
+              <TrgOps dchg="true" qchg="false" dupd="false" period="true" />  
+              <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="false" />  
+              <RptEnabled max="16">
+                <ClientLN iedName="ClientIED" ldInst="LD0" lnClass="LLN0" lnInst="" />
+              </RptEnabled> 
+            </ReportControl>  
+            <DOI name="Mod" desc="模式"> 
+              <DAI name="ctlModel" desc=""> 
+                <Val>status-only</Val> 
+              </DAI> 
+            </DOI>  
+            </LN0>  
+          <LN inst="1" desc="物理设备逻辑节点" lnClass="LPHD" lnType="BATTERY_V1.00_LPHD"> 
+            <DOI name="Mod" desc="模式"> 
+              <DAI name="ctlModel" desc=""> 
+                <Val>status-only</Val> 
+              </DAI> 
+            </DOI>  
+            </LN>  
+          </LDevice>  
+        </Server> 
+    </AccessPoint> 
+  </IED>  
+  <DataTypeTemplates> 
+    <LNodeType id="IHMI_0" lnClass="IHMI">
+      <DO name="Mod" type="CN_INC_Mod" desc="模式" />
+      </LNodeType>
+    <DOType id="CN_INC_Mod" cdc="INC"> 
+      <DA name="stVal" bType="Enum" type="Mod" dchg="true" fc="ST" />  
+      </DOType>  
+    <DAType id="CN_SBOw_Oper_SDPC"> 
+      <BDA name="ctlVal" bType="BOOLEAN" />  
+      </DAType>  
+    <EnumType id="multiplier"> 
+      <EnumVal ord="-24">y</EnumVal>  
+      </EnumType>  
+    </DataTypeTemplates> 
+</SCL>

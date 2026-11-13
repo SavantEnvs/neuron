@@ -1,0 +1,9 @@
+project: savantenvs/neuron
+target: fuzz_tpy
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tpy/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tpy
+    libfuzzer: true
+    timeout: 30

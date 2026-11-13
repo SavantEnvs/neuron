@@ -1,0 +1,40 @@
+PROJECT_NAME;KN_0169\Alpha Space
+VERSION_OF_REFERENCEFILE;36
+TIMESTAMP_OF_LAST_CHANGE;28-07-2025, 13:50:25.353
+AUTHOR_OF_LAST_CHANGE;
+VERSION_OF_LAYOUT;2
+# keyname;device obj.-instance;object-name;object-type;object-instance;description;present-value-default;min-present-value;max-present-value;commandable;supports COV;hi-limit;low-limit;state-text-reference;unit-code;vendor-specific-address;part of installation;module;element;Reference code;Installation code;Terminal number
+KN_0169\Alpha Space:PC2:DEV-2\System event\Datum;2;2;8;2;ASP01;;;;;;;;;;;;;;;
+KN_0169\Alpha Space:PC2:DEV-1\System event\Zeit;2;TC_OSID2_ALG-1;8;1;Zeit;;;;N;;;;;;;;;;;
+KN_0169\Alpha Space:PC2:DEV-3\System event\Jahreszahl;2;TC_OSID2_ALG-3;8;3;Jahreszahl;;;;N;;;;;;TC_OSID2_ALG-3;;;;;;
+KN_0169\Alpha Space:PC2:DEV-19\System event\Sekunden;2;TC_OSID2_ALG-19;8;19;Sekunden;;;;N;;;;;;TC_OSID2_ALG-19;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097192\System event\Controller-[1] Versorgungsspannung zu niedrig/hoch;2;BV-2097192;5;2097192;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] Versorgungsspannung zu niedrig/hoch;;;;N;;;;0;;TC_OSID2_MLDCMP-40;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097178\System event\Controller-[1] Fehler bei Synchronisation mit dem Zeitserver;2;BV-2097178;5;2097178;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] Fehler bei Synchronisation mit dem Zeitserver;;;;N;;;;0;;TC_OSID2_MLDCMP-26;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097191\System event\Controller-[1] Controller-Temperatur zu niedrig/hoch;2;BV-2097191;5;2097191;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] Controller-Temperatur zu niedrig/hoch;;;;N;;;;0;;TC_OSID2_MLDCMP-39;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097183\System event\US-[1] History Abruf Timer;2;BV-2097183;5;2097183;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] History Abruf Timer;;;;N;;;;0;;TC_OSID2_MLDCMP-31;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097184\System event\US-[1] Alarm TC History-Datenbank hat maximale Größe erreicht;2;BV-2097184;5;2097184;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Alarm TC History-Datenbank hat maximale Größe erreicht;;;;N;;;;0;;TC_OSID2_MLDCMP-32;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097180\System event\US-[1] Kommunikationsalarm serielle Schnittstelle 7;2;BV-2097180;5;2097180;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Kommunikationsalarm serielle Schnittstelle 7;;;;N;;;;0;;TC_OSID2_MLDCMP-28;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097181\System event\US-[1] Kommunikationsalarm serielle Schnittstelle 8;2;BV-2097181;5;2097181;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Kommunikationsalarm serielle Schnittstelle 8;;;;N;;;;0;;TC_OSID2_MLDCMP-29;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097161\System event\Us-[1] dauerhafte Datenspeicherung Alarm;2;BV-2097161;5;2097161;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Us-[1] dauerhafte Datenspeicherung Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-9;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097156\System event\US-[1] Systemliste Alarm;2;BV-2097156;5;2097156;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Systemliste Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-4;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097157\System event\US-[1] Textliste Alarm;2;BV-2097157;5;2097157;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Textliste Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-5;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097159\System event\US-[1] Password Liste Alarm;2;BV-2097159;5;2097159;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Password Liste Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-7;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097160\System event\US-[1] E/A Liste Alarm;2;BV-2097160;5;2097160;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] E/A Liste Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-8;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097168\System event\US-[1] Kommunikationsalarm serielle Schnittstelle 1;2;BV-2097168;5;2097168;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Kommunikationsalarm serielle Schnittstelle 1;;;;N;;;;0;;TC_OSID2_MLDCMP-16;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097169\System event\US-[1] Kommunikationsalarm serielle Schnittstelle 2;2;BV-2097169;5;2097169;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Kommunikationsalarm serielle Schnittstelle 2;;;;N;;;;0;;TC_OSID2_MLDCMP-17;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097170\System event\US-[1] Kommunikationsalarm serielle Schnittstelle 3;2;BV-2097170;5;2097170;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Kommunikationsalarm serielle Schnittstelle 3;;;;N;;;;0;;TC_OSID2_MLDCMP-18;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097172\System event\US-[1] Netzwerkmanager Alarm;2;BV-2097172;5;2097172;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Netzwerkmanager Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-20;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097173\System event\US-[1] 1. Seriendrücker Alarm;2;BV-2097173;5;2097173;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] 1. Seriendrücker Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-21;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097174\System event\US-[1] 2. Seriendrücker Alarm;2;BV-2097174;5;2097174;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] 2. Seriendrücker Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-22;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097175\System event\US-[1] 1. Aufruf Alarm;2;BV-2097175;5;2097175;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] 1. Aufruf Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-23;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097176\System event\US-[1] 2. Aufruf Alarm;2;BV-2097176;5;2097176;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] 2. Aufruf Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-24;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097179\System event\US-[1] Kommunikationsalarm serielle Schnittstelle 4;2;BV-2097179;5;2097179;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] Kommunikationsalarm serielle Schnittstelle 4;;;;N;;;;0;;TC_OSID2_MLDCMP-27;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097182\System event\US-[1] E-mail alarm 1;2;BV-2097182;5;2097182;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] E-mail alarm 1;;;;N;;;;0;;TC_OSID2_MLDCMP-30;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097187\System event\US-[1] E-mail alarm 2;2;BV-2097187;5;2097187;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].US-[1] E-mail alarm 2;;;;N;;;;0;;TC_OSID2_MLDCMP-35;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097163\System event\Controller-[1] CAB Bus passiv Alarm;2;BV-2097163;5;2097163;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] CAB Bus passiv Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-11;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097164\System event\Controller-[1] CAB Bus aus Alarm;2;BV-2097164;5;2097164;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] CAB Bus aus Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-12;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097193\System event\Controller-[1] SNMP-Alarm 1;2;BV-2097193;5;2097193;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] SNMP-Alarm 1;;;;N;;;;0;;TC_OSID2_MLDCMP-41;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097194\System event\Controller-[1] SNMP-Alarm 2;2;BV-2097194;5;2097194;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] SNMP-Alarm 2;;;;N;;;;0;;TC_OSID2_MLDCMP-42;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097167\System event\Controller-[1] ST-Modul nicht detektierter Alarm;2;BV-2097167;5;2097167;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] ST-Modul nicht detektierter Alarm;;;;N;;;;0;;TC_OSID2_MLDCMP-15;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097171\System event\Controller-[1] Technisches Limit erreicht;2;BV-2097171;5;2097171;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] Technisches Limit erreicht;;;;N;;;;0;;TC_OSID2_MLDCMP-19;;;;;;
+KN_0169\Alpha Space:PC2:BV-2097177\System event\Controller-[1] Engineered INC nicht detektiert;2;BV-2097177;5;2097177;GB_Alpha Space Aachen.Alpha Space.ASP01 [1].Controller-[1] Engineered INC nicht detektiert;;;;N;;;;0;;TC_OSID2_MLDCMP-25;;;;;;

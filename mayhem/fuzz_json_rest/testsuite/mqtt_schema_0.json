@@ -1,0 +1,1 @@
+C{"timestamp":"${timestamp}","node":"${node}","group":"${group}","values":"${tag_values}","errors":"${tag_errors}","static":"${static_tags}"}

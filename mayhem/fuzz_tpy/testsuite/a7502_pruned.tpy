@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PlcProjectInfo>
+	<ProjectInfo>
+		<Path>D:\Partikelwiegeraum_Bruehl\Programm\A7502.pro</Path>
+		<IsLibrary>false</IsLibrary>
+		<ChangeDate>2026-04-10T12:50:37</ChangeDate>
+		<Library>
+			<Name>TcUtilities.lib</Name>
+			<Path>C:\TwinCAT\PLC\LIB\TcUtilities.lib</Path>
+			<ChangeDate>2016-02-03T17:08:58</ChangeDate>
+		</Library>
+		<Library>
+			<Name>TcIMX53.lib</Name>
+			<Path>C:\TwinCAT\PLC\LIB\TcIMX53.lib</Path>
+			<ChangeDate>2013-11-21T14:46:16</ChangeDate>
+		</Library>
+		</ProjectInfo>
+	<RoutingInfo>
+		<AdsInfo>
+			<NetId>53.76.47.248.1.1</NetId>
+			<Port>801</Port>
+			<TargetName>
+				Zielsystem: M010GLTS3052010 (53.76.47.248.1.1), Laufzeit: 1
+			</TargetName>
+		</AdsInfo>
+	</RoutingInfo>
+	<CompilerInfo>
+		<CpuFamily>x86</CpuFamily>
+		<CompilerVersion>2.9.9.50</CompilerVersion>
+		<Alignment>Byte</Alignment>
+		<PackSize>1</PackSize>
+		<TwinCATVersion>2.11.0</TwinCATVersion>
+		<TCatPlcCtrlVersion>2.11.2605</TCatPlcCtrlVersion>
+	</CompilerInfo>
+	<TargetInfo>
+		<CpuFamily>x86</CpuFamily>
+		<DataAreaInfo>
+			<DataSize>1048576</DataSize>
+			<RetainSize>32768</RetainSize>
+			<MAreaSize>32768</MAreaSize>
+			<InputSize>16384</InputSize>
+			<OutputSize>16384</OutputSize>
+			<MaxNumOfPOUs>2048</MaxNumOfPOUs>
+		</DataAreaInfo>
+	</TargetInfo>
+	<TaskInfos>
+		<TaskInfo>
+			<Name>Standard</Name>
+			<Priority>1</Priority>
+			<CycleTime>10</CycleTime>
+			<CycleTimeUs>10000</CycleTimeUs>
+			<Calls>
+				<ProgramCall>MAIN</ProgramCall>
+			</Calls>
+		</TaskInfo>
+		<TaskInfo>
+			<Name>Kommunikation</Name>
+			<Priority>0</Priority>
+			<CycleTime>50</CycleTime>
+			<CycleTimeUs>50000</CycleTimeUs>
+			<Calls>
+				<ProgramCall>COM</ProgramCall>
+			</Calls>
+		</TaskInfo>
+	</TaskInfos>
+	<DirectoryInfos>
+		<DirectoryInfo>
+			<Type>LibraryDir</Type>
+			<Path>c:\aaa_projekte\daimler\brühl\003_052\13-a7502\13-a7502\ga\sps\lib\</Path>
+		</DirectoryInfo>
+		<DirectoryInfo>
+			<Type>LibraryDir</Type>
+			<Path>d:\partikelwiegeraum_brühl\lib\</Path>
+		</DirectoryInfo>
+		</DirectoryInfos>
+	<DataTypes>
+		<DataType>
+			<Name Decoration="20010154">ARRAY [0..6] OF WORD</Name>
+			<Type>WORD</Type>
+			<BitSize>112</BitSize>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="1006501F" Crc32="1626642406" LastChange="2021-06-14T16:44:44">FB_SigMon</Name>
+			<BitSize>288</BitSize>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="d:\partikelwiegeraum_bruehl\programm\lib\STANDARD.LIB">T_1</Name>
+				<Type Decoration="10060D24">TON</Type>
+				<BitSize>120</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>tmp</Name>
+				<Type Decoration="20010154">ARRAY [0..6] OF WORD</Type>
+				<BitSize>112</BitSize>
+				<BitOffs>120</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>1194</CodeIndex>
+				<InitIndex>1195</InitIndex>
+			</FbInfo>
+		</DataType>
+		</DataTypes>
+	<Functions>
+		<Function>
+			<Name Decoration="100493A6" Crc32="2200131836" LastChange="2021-06-14T16:44:44">fRealToStringFormat</Name>
+			<FunInfo>
+				<CodeIndex>1201</CodeIndex>
+				<ReturnValue>
+					<Name>fRealToStringFormat</Name>
+					<Type Decoration="40000051">STRING(80)</Type>
+					<BitSize>648</BitSize>
+				</ReturnValue>
+				<FunParameter>
+					<Name>szWert</Name>
+					<Type Decoration="40000051">STRING(80)</Type>
+					<BitSize>648</BitSize>
+				</FunParameter>
+				<FunParameter>
+					<Name FunParameter="Input">AWert</Name>
+					<Type>REAL</Type>
+					<BitSize>32</BitSize>
+				</FunParameter>
+				</FunInfo>
+		</Function>
+		<Function>
+			<Name Decoration="10045580" Crc32="4180856890" LastChange="2021-06-14T16:44:44">IsTerminated</Name>
+			<FunInfo>
+				<CodeIndex>1204</CodeIndex>
+				<ReturnValue>
+					<Name>IsTerminated</Name>
+					<Type>BOOL</Type>
+					<BitSize>8</BitSize>
+				</ReturnValue>
+				<FunParameter>
+					<Name>pEnd</Name>
+					<Type Pointer="1">BYTE</Type>
+					<BitSize>32</BitSize>
+				</FunParameter>
+				<FunParameter>
+					<Name FunParameter="Input">position</Name>
+					<Type>UDINT</Type>
+					<BitSize>32</BitSize>
+				</FunParameter>
+				</FunInfo>
+		</Function>
+		</Functions>
+	<Programs>
+		<Program>
+			<Name Decoration="10000000" Crc32="2800869298" LastChange="2021-06-14T16:44:44">_MAIN_KAx0700</Name>
+			<PrgInfo>
+				<CodeIndex>1156</CodeIndex>
+			</PrgInfo>
+		</Program>
+		<Program>
+			<Name Decoration="10000000" Crc32="0299561307" LastChange="2023-03-28T15:45:45">_MAIN_KAx0700_Aktoren</Name>
+			<PrgInfo>
+				<CodeIndex>1157</CodeIndex>
+			</PrgInfo>
+		</Program>
+		</Programs>
+	<Symbols>
+		<Symbol>
+			<Name TaskPrio="1">A0001_Condair_Modbus.TRead</Name>
+			<Type Decoration="10060D24">TON</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1988</IOffset>
+			<BitSize>120</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">A0001_Condair_Modbus.Flanke_Entleerung</Name>
+			<Type Decoration="1003051C">R_TRIG</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2003</IOffset>
+			<BitSize>24</BitSize>
+		</Symbol>
+		</Symbols>
+	<VarConfigs>
+		<VarConfig>
+			<Name Static="Input" TaskPrio="2">MichellS8000.Master.InData</Name>
+			<Type Decoration="10022A21">MB_KL6inData22B</Type>
+			<IGroup>61472</IGroup>
+			<IOffset VarConfig="Changeable">5044</IOffset>
+			<BitSize>192</BitSize>
+			<Parent>
+				<Name SubItem="InData">MichellS8000.Master</Name>
+				<Type Decoration="1010192C">ModbusRtuMaster_KL6x22B</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="2">MichellS8000.Master.OutData</Name>
+			<Type Decoration="10022970">MB_KL6outData22B</Type>
+			<IGroup>61488</IGroup>
+			<IOffset VarConfig="Changeable">3424</IOffset>
+			<BitSize>192</BitSize>
+			<Parent>
+				<Name SubItem="OutData">MichellS8000.Master</Name>
+				<Type Decoration="1010192C">ModbusRtuMaster_KL6x22B</Type>
+			</Parent>
+		</VarConfig>
+		</VarConfigs>
+</PlcProjectInfo>

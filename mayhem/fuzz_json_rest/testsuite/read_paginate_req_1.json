@@ -1,0 +1,1 @@
+{"meta":{"currentPage":1,"pageSize":10,"total":1},"items":[{"name":"temperature","type":10,"address":"1!400001","attribute":1,"description":"","precision":2,"decimal":0,"bias":0,"unit":"\u00b0C","value":25.5,"transferPrecision":2,"timestamp":1700000000000,"quality":192,"source_timestamp":1700000000123,"server_timestamp":1700000000456,"attributes":{}}]}
